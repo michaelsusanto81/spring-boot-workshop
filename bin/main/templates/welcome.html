@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<title>Welcome</title>
+	</head>
+	<body>
+		<h1>Hello World!</h1>
+		<h2 th:text="'Hello ' + ${name}"></h2>
+		
+		<a th:href="@{/create-human}">
+			<button>Create Human</button>
+		</a>
+	</body>
+</html>
